@@ -31,6 +31,10 @@ class ArticleTestClass(TestCase):
         self.new_article.tags.add(self.new_tag)
 
     def tearDown(self):
+
+
+python3.6 manage.py test news
+
         Editor.objects.all().delete()
         tags.objects.all().delete()
         Article.objects.all().delete()
